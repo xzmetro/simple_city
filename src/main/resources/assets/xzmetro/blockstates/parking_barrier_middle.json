@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "xzmetro:block/parking_barrier_middle",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "xzmetro:block/parking_barrier_middle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "xzmetro:block/parking_barrier_middle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "xzmetro:block/parking_barrier_middle",
+      "y": 270
+    }
+  }
+}

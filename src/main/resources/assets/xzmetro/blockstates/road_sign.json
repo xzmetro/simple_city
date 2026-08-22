@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "xzmetro:block/road_sign",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "xzmetro:block/road_sign",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "xzmetro:block/road_sign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "xzmetro:block/road_sign",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xzmetro:block/cyan_concrete_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/cyan_concrete"
+    },
+    "type=top": {
+      "model": "xzmetro:block/cyan_concrete_slab_top"
+    }
+  }
+}

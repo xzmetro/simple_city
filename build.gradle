@@ -1,0 +1,119 @@
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+repositories {
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+}
+
+loom {
+	splitEnvironmentSourceSets()
+	mods {
+		"xzmetro" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+	accessWidenerPath = file("src/main/resources/xzmetro.accesswidener")
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 17
+}
+
+
+tasks.withType(Javadoc).configureEach {
+	options.encoding = 'UTF-8'
+	options.charSet = 'UTF-8'
+	options.addStringOption('Xdoclint:none', '-quiet') // 忽略文档检查警告
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+	def projectName = project.name
+	inputs.property "projectName", projectName
+
+	from("LICENSE") {
+		rename { "${it}_$projectName"}
+	}
+}
+
+remapJar {
+	archiveFileName = "xzmetro_fabric_${version}.jar"
+}
+
+remapSourcesJar {
+	archiveFileName = "xzmetro_fabric_${version}_source.jar"
+}
+
+tasks.register('docJar', Jar) {
+	dependsOn javadoc
+	from javadoc.destinationDir
+	archiveClassifier.set('javadoc')
+	archiveFileName = "xzmetro_fabric_${version}_doc.jar"
+}
+
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			artifactId = "xzmetro-mod"
+			from components.java
+			artifact docJar
+			pom {
+				licenses {
+					license {
+						name = "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International"
+						url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+					}
+				}
+			}
+		}
+	}
+	repositories {
+		mavenLocal()
+		maven {
+			name = "xzmetro"
+			url = file("D:/MyMavenRepo/")
+		}
+	}
+}
+
+tasks.build {
+	dependsOn tasks.docJar
+	dependsOn tasks.publish
+}
