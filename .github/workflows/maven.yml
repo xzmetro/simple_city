@@ -1,0 +1,51 @@
+name: build
+on: [pull_request, push]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+
+      - name: validate gradle wrapper
+        uses: gradle/actions/wrapper-validation@v6
+
+      - name: setup jdk
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'microsoft'
+
+      - name: create gradle.properties
+        run: |
+          cat > gradle.properties << 'EOF'
+          org.gradle.jvmargs=-Xmx1G
+          org.gradle.parallel=true
+          org.gradle.configuration-cache=false
+
+          minecraft_version=1.20.1
+          loader_version=0.19.3
+          loom_version=1.17-SNAPSHOT
+
+          mod_version=1.0.0_beta.6
+          maven_group=org.xzmetro
+
+          fabric_api_version=0.92.11+1.20.1
+
+          # GitHub Packages 认证
+          gpr.user=${{ github.actor }}
+          gpr.key=${{ secrets.GITHUB_TOKEN }}
+          EOF
+
+      - name: make gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: build
+        run: ./gradlew build
+
+      - name: capture build artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: Artifacts
+          path: build/libs/
