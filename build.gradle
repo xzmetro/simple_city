@@ -105,10 +105,9 @@ publishing {
 		}
 	}
 	repositories {
-		mavenLocal()
 		maven {
 			name = "xzmetro"
-			url = file("D:/MyMavenRepo/")
+			url = file("D:/Website/xzmetro.github.io/maven")
 		}
 	}
 }
