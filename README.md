@@ -1,6 +1,6 @@
-# Xiaozhong's Metro
+# Simple City
 
-[![Modrinth](https://img.shields.io/badge/Modrinth-1.20.1-00AF5C?logo=modrinth)](https://modrinth.com/mod/xz_s_metro/)
+[![Modrinth](https://img.shields.io/badge/Modrinth-1.20.1-00AF5C?logo=modrinth)](https://modrinth.com/mod/simple_city/)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 A very ordinary and simple subway facility expansion mod. It is recommended to add the [Minecraft Transit Railway](https://modrinth.com/mod/minecraft-transit-railway) mod for better utilization.
@@ -63,6 +63,6 @@ See the [LICENSE](LICENSE) file for details.
 ---
 
 ## Authors
-Xiaozhong's Metro Organization All People
+Xiaozhong's Metro Organization
 
 > This mod is under active development. More features coming soon!
