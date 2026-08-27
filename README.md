@@ -26,7 +26,6 @@ A very ordinary and simple subway facility expansion mod. It is recommended to a
 - Parking Barrier (Left / Middle / Right / Bracket)
 - Road Signs
 - Construction Barriers
-- Trackside Balise
 
 ---
 
