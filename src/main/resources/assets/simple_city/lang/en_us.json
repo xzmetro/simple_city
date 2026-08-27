@@ -112,7 +112,7 @@
   "block.simple_city.mesh_construction_barrier": "Mesh Construction Barrier",
   "block.simple_city.plain_construction_barrier_corner": "Plain Construction Barrier Corner",
   "block.simple_city.mesh_construction_barrier_corner": "Mesh Construction Barrier Corner",
-  "block.simple_city.trackside_balise": "Trackside Balise",
+  "block.simple_city.tactile_paving": "Tactile Paving",
   "block.simple_city.road_sign": "Road Sign",
   "block.simple_city.glowing_slab": "Glowing Slab",
   "tooltip.simple_city.needs_support_block": "§6Please raise it by one block before placing",

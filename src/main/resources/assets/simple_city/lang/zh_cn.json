@@ -112,7 +112,7 @@
   "block.simple_city.mesh_construction_barrier": "网格道路工地围挡",
   "block.simple_city.plain_construction_barrier_corner": "普通道路工地围挡转角",
   "block.simple_city.mesh_construction_barrier_corner": "网格道路工地围挡转角",
-  "block.simple_city.trackside_balise": "地铁轨道地面应答机",
+  "block.simple_city.tactile_paving": "盲道",
   "block.simple_city.road_sign": "路牌",
   "block.simple_city.glowing_slab": "会发光的半砖",
   "tooltip.simple_city.needs_support_block": "§6请垫高一格后再放置",
@@ -121,5 +121,5 @@
   "itemGroup.simple_city.concrete_blocks": "简单城建-混凝土方块",
   "itemGroup.simple_city.wool_blocks": "简单城建-羊毛方块",
   "modmenu.nameTranslation.simple_city": "简单城建",
-  "modmenu.descriptionTranslation.simple_city": "一款普普通通简简单单的地铁设施扩展模组，建议添加MTR模组食用效果更佳~"
+  "modmenu.descriptionTranslation.simple_city": "一款普普通通简简单单的地铁设施扩展模组，建议添加MTR模组食用效果更佳~",
 }
