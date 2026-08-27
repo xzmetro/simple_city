@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "xzmetro:block/glowing_slab",
-    "side": "xzmetro:block/glowing_slab",
-    "top": "xzmetro:block/glowing_slab"
-  }
-}

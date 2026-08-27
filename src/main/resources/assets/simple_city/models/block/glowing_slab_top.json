@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "simple_city:block/glowing_slab",
+    "side": "simple_city:block/glowing_slab",
+    "top": "simple_city:block/glowing_slab"
+  }
+}

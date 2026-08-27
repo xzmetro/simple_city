@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "simple_city:block/glowing_slab"
+    },
+    "type=double": {
+      "model": "simple_city:block/glowing_slab_double"
+    },
+    "type=top": {
+      "model": "simple_city:block/glowing_slab_top"
+    }
+  }
+}

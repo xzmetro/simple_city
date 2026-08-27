@@ -1,10 +1,12 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
 plugins {
 	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
 }
 
 version = project.mod_version
-group = project.maven_group
+group = project.mod_group
 
 repositories {
 	exclusiveContent {
@@ -23,12 +25,12 @@ repositories {
 loom {
 	splitEnvironmentSourceSets()
 	mods {
-		"xzmetro" {
+		"${project.mod_id}" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
 	}
-	accessWidenerPath = file("src/main/resources/xzmetro.accesswidener")
+	accessWidenerPath = file("src/main/resources/simple_city.accesswidener")
 }
 
 dependencies {
@@ -36,14 +38,24 @@ dependencies {
 	mappings loom.officialMojangMappings()
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	modImplementation "maven.modrinth:mOgUt4GM:lEkperf6"
 }
 
 processResources {
-	def version = project.version
-	inputs.property "version", version
+	inputs.property "version", project.mod_version
+	inputs.property "id", project.mod_id
+	inputs.property "name", project.mod_name
+	inputs.property "description", project.mod_desc
+	inputs.property "license", project.mod_license
 
 	filesMatching("fabric.mod.json") {
-		expand "version": version
+		expand([
+		    'version': project.mod_version,
+			'id': project.mod_id,
+			'name': project.mod_name,
+			'description': project.mod_desc,
+			'license': project.mod_license
+		])
 	}
 }
 
@@ -73,25 +85,16 @@ jar {
 	}
 }
 
-remapJar {
-	archiveFileName = "xzmetro_fabric_${version}.jar"
-}
-
-remapSourcesJar {
-	archiveFileName = "xzmetro_fabric_${version}_source.jar"
-}
-
 tasks.register('docJar', Jar) {
 	dependsOn javadoc
 	from javadoc.destinationDir
 	archiveClassifier.set('javadoc')
-	archiveFileName = "xzmetro_fabric_${version}_doc.jar"
 }
 
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
-			artifactId = "xzmetro-mod"
+			artifactId = "simple_city"
 			from components.java
 			artifact docJar
 			pom {
@@ -106,7 +109,7 @@ publishing {
 	}
 	repositories {
 		maven {
-			name = "xzmetro"
+			name = "SimpleCity"
 			url = file("D:/Website/xzmetro.github.io/maven")
 		}
 	}

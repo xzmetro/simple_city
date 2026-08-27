@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,open=false": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_opened",
+      "y": 180
+    },
+    "facing=north,open=true": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_closed",
+      "y": 180
+    },
+    "facing=east,open=false": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_opened",
+      "y": 270
+    },
+    "facing=east,open=true": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_closed",
+      "y": 270
+    },
+    "facing=south,open=false": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_opened",
+      "y": 0
+    },
+    "facing=south,open=true": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_closed",
+      "y": 0
+    },
+    "facing=west,open=false": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_opened",
+      "y": 90
+    },
+    "facing=west,open=true": {
+      "model": "simple_city:block/fire_extinguisher_cabinet_closed",
+      "y": 90
+    }
+  }
+}

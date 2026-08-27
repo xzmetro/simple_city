@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "xzmetro",
+	"id": "${id}",
 	"version": "${version}",
-	"name": "Xiaozhong's Metro",
-	"description": "一款普普通通简简单单的地铁设施扩展模组，建议添加MTR模组食用效果更佳~",
+	"name": "${name}",
+	"description": "${description}",
 	"authors": [
 		"Hana_jiang",
 		"XMTG6666",
@@ -13,20 +13,20 @@
 		"homepage": "https://xzmetro.github.io/xzmetro-mod/",
 		"sources": "https://github.com/xzmetro/xzmetro-mod"
 	},
-	"license": "CC BY-NC-ND 4.0",
-	"icon": "assets/xzmetro/icon.png",
+	"license": "${license}",
+	"icon": "assets/simple_city/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "org.xzmetro.mod.main.XiaozhongMetro"
+			"org.simplecity.mod.main.SimpleCity"
 		],
 		"client": [
-          "org.xzmetro.mod.client.XiaozhongMetroClient"
+            "org.simplecity.mod.client.XiaozhongMetroClient"
 		]
 	},
 	"mixins": [
 		{
-			"config": "xzmetro.client.mixins.json",
+			"config": "simple_city.client.mixins.json",
 			"environment": "client"
 		}
 	],

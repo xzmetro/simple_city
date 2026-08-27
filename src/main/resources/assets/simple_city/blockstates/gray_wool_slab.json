@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "simple_city:block/gray_wool_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/gray_wool"
+    },
+    "type=top": {
+      "model": "simple_city:block/gray_wool_slab_top"
+    }
+  }
+}

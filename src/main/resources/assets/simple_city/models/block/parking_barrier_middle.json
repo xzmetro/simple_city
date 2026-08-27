@@ -1,0 +1,21 @@
+{
+  "textures": {
+    "0": "simple_city:block/parking_barrier_middle",
+    "particle": "simple_city:block/parking_barrier_middle"
+  },
+  "elements": [
+    {
+      "from": [0, 11, 3],
+      "to": [16, 14, 5],
+      "rotation": {"angle": 0, "axis": "y", "origin": [-6, 0, -2]},
+      "faces": {
+        "north": {"uv": [0, 0, 16, 3], "texture": "#0"},
+        "east": {"uv": [0, 10, 2, 13], "texture": "#0"},
+        "south": {"uv": [0, 3, 16, 6], "texture": "#0"},
+        "west": {"uv": [2, 10, 4, 13], "texture": "#0"},
+        "up": {"uv": [16, 8, 0, 6], "texture": "#0"},
+        "down": {"uv": [16, 8, 0, 10], "texture": "#0"}
+      }
+    }
+  ]
+}

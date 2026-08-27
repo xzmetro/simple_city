@@ -1,0 +1,134 @@
+package org.simplecity.mod.block;
+
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import org.simplecity.mod.util.register.SimpleBlock;
+import org.simplecity.mod.util.register.TooltipBlock;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.material.MapColor;
+
+public final class ModBlocks {
+    private ModBlocks() {
+    }
+
+    // 26.3移植
+    public static final Block WHITE_CONCRETE_SLAB = SimpleBlock.register("white_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block ORANGE_CONCRETE_SLAB = SimpleBlock.register("orange_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block MAGENTA_CONCRETE_SLAB = SimpleBlock.register("magenta_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_MAGENTA).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIGHT_BLUE_CONCRETE_SLAB = SimpleBlock.register("light_blue_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block YELLOW_CONCRETE_SLAB = SimpleBlock.register("yellow_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIME_CONCRETE_SLAB = SimpleBlock.register("lime_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block PINK_CONCRETE_SLAB = SimpleBlock.register("pink_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_PINK).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block GRAY_CONCRETE_SLAB = SimpleBlock.register("gray_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_GRAY).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIGHT_GRAY_CONCRETE_SLAB = SimpleBlock.register("light_gray_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block CYAN_CONCRETE_SLAB = SimpleBlock.register("cyan_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_CYAN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block PURPLE_CONCRETE_SLAB = SimpleBlock.register("purple_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BLUE_CONCRETE_SLAB = SimpleBlock.register("blue_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BROWN_CONCRETE_SLAB = SimpleBlock.register("brown_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block GREEN_CONCRETE_SLAB = SimpleBlock.register("green_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block RED_CONCRETE_SLAB = SimpleBlock.register("red_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_RED).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BLACK_CONCRETE_SLAB = SimpleBlock.register("black_concrete_slab", new SlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block WHITE_CONCRETE_STAIRS = SimpleBlock.register("white_concrete_stairs", new StairBlock(Blocks.WHITE_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block ORANGE_CONCRETE_STAIRS = SimpleBlock.register("orange_concrete_stairs", new StairBlock(Blocks.ORANGE_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block MAGENTA_CONCRETE_STAIRS = SimpleBlock.register("magenta_concrete_stairs", new StairBlock(Blocks.MAGENTA_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_MAGENTA).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = SimpleBlock.register("light_blue_concrete_stairs", new StairBlock(Blocks.LIGHT_BLUE_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block YELLOW_CONCRETE_STAIRS = SimpleBlock.register("yellow_concrete_stairs", new StairBlock(Blocks.YELLOW_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIME_CONCRETE_STAIRS = SimpleBlock.register("lime_concrete_stairs", new StairBlock(Blocks.LIME_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block PINK_CONCRETE_STAIRS = SimpleBlock.register("pink_concrete_stairs", new StairBlock(Blocks.PINK_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_PINK).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block GRAY_CONCRETE_STAIRS = SimpleBlock.register("gray_concrete_stairs", new StairBlock(Blocks.GRAY_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_GRAY).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = SimpleBlock.register("light_gray_concrete_stairs", new StairBlock(Blocks.LIGHT_GRAY_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block CYAN_CONCRETE_STAIRS = SimpleBlock.register("cyan_concrete_stairs", new StairBlock(Blocks.CYAN_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_CYAN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block PURPLE_CONCRETE_STAIRS = SimpleBlock.register("purple_concrete_stairs", new StairBlock(Blocks.PURPLE_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BLUE_CONCRETE_STAIRS = SimpleBlock.register("blue_concrete_stairs", new StairBlock(Blocks.BLUE_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BROWN_CONCRETE_STAIRS = SimpleBlock.register("brown_concrete_stairs", new StairBlock(Blocks.BROWN_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block GREEN_CONCRETE_STAIRS = SimpleBlock.register("green_concrete_stairs", new StairBlock(Blocks.GREEN_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block RED_CONCRETE_STAIRS = SimpleBlock.register("red_concrete_stairs", new StairBlock(Blocks.RED_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_RED).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BLACK_CONCRETE_STAIRS = SimpleBlock.register("black_concrete_stairs", new StairBlock(Blocks.BLACK_CONCRETE.defaultBlockState(), Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block WHITE_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("white_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block ORANGE_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("orange_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block MAGENTA_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("magenta_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_MAGENTA).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIGHT_BLUE_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("light_blue_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block YELLOW_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("yellow_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIME_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("lime_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GREEN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block PINK_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("pink_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_PINK).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block GRAY_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("gray_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_GRAY).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block LIGHT_GRAY_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("light_gray_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block CYAN_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("cyan_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_CYAN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block PURPLE_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("purple_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BLUE_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("blue_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BROWN_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("brown_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block GREEN_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("green_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block RED_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("red_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_RED).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block BLACK_CONCRETE_VERTICAL_SLAB = SimpleBlock.register("black_concrete_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(1.8f, 6.0f).requiresCorrectToolForDrops()), true);
+    public static final Block WHITE_WOOL_SLAB = SimpleBlock.register("white_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block ORANGE_WOOL_SLAB = SimpleBlock.register("orange_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block MAGENTA_WOOL_SLAB = SimpleBlock.register("magenta_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIGHT_BLUE_WOOL_SLAB = SimpleBlock.register("light_blue_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block YELLOW_WOOL_SLAB = SimpleBlock.register("yellow_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIME_WOOL_SLAB = SimpleBlock.register("lime_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block PINK_WOOL_SLAB = SimpleBlock.register("pink_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block GRAY_WOOL_SLAB = SimpleBlock.register("gray_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIGHT_GRAY_WOOL_SLAB = SimpleBlock.register("light_gray_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block CYAN_WOOL_SLAB = SimpleBlock.register("cyan_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block PURPLE_WOOL_SLAB = SimpleBlock.register("purple_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BLUE_WOOL_SLAB = SimpleBlock.register("blue_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BROWN_WOOL_SLAB = SimpleBlock.register("brown_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block GREEN_WOOL_SLAB = SimpleBlock.register("green_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block RED_WOOL_SLAB = SimpleBlock.register("red_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BLACK_WOOL_SLAB = SimpleBlock.register("black_wool_slab", new SlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block WHITE_WOOL_STAIRS = SimpleBlock.register("white_wool_stairs", new StairBlock(Blocks.WHITE_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block ORANGE_WOOL_STAIRS = SimpleBlock.register("orange_wool_stairs", new StairBlock(Blocks.ORANGE_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block MAGENTA_WOOL_STAIRS = SimpleBlock.register("magenta_wool_stairs", new StairBlock(Blocks.MAGENTA_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIGHT_BLUE_WOOL_STAIRS = SimpleBlock.register("light_blue_wool_stairs", new StairBlock(Blocks.LIGHT_BLUE_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block YELLOW_WOOL_STAIRS = SimpleBlock.register("yellow_wool_stairs", new StairBlock(Blocks.YELLOW_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIME_WOOL_STAIRS = SimpleBlock.register("lime_wool_stairs", new StairBlock(Blocks.LIME_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block PINK_WOOL_STAIRS = SimpleBlock.register("pink_wool_stairs", new StairBlock(Blocks.PINK_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block GRAY_WOOL_STAIRS = SimpleBlock.register("gray_wool_stairs", new StairBlock(Blocks.GRAY_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIGHT_GRAY_WOOL_STAIRS = SimpleBlock.register("light_gray_wool_stairs", new StairBlock(Blocks.LIGHT_GRAY_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block CYAN_WOOL_STAIRS = SimpleBlock.register("cyan_wool_stairs", new StairBlock(Blocks.CYAN_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block PURPLE_WOOL_STAIRS = SimpleBlock.register("purple_wool_stairs", new StairBlock(Blocks.PURPLE_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BLUE_WOOL_STAIRS = SimpleBlock.register("blue_wool_stairs", new StairBlock(Blocks.BLUE_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BROWN_WOOL_STAIRS = SimpleBlock.register("brown_wool_stairs", new StairBlock(Blocks.BROWN_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block GREEN_WOOL_STAIRS = SimpleBlock.register("green_wool_stairs", new StairBlock(Blocks.GREEN_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block RED_WOOL_STAIRS = SimpleBlock.register("red_wool_stairs", new StairBlock(Blocks.RED_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BLACK_WOOL_STAIRS = SimpleBlock.register("black_wool_stairs", new StairBlock(Blocks.BLACK_WOOL.defaultBlockState(), Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block WHITE_WOOL_VERTICAL_SLAB = SimpleBlock.register("white_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block ORANGE_WOOL_VERTICAL_SLAB = SimpleBlock.register("orange_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block MAGENTA_WOOL_VERTICAL_SLAB = SimpleBlock.register("magenta_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIGHT_BLUE_WOOL_VERTICAL_SLAB = SimpleBlock.register("light_blue_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block YELLOW_WOOL_VERTICAL_SLAB = SimpleBlock.register("yellow_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIME_WOOL_VERTICAL_SLAB = SimpleBlock.register("lime_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block PINK_WOOL_VERTICAL_SLAB = SimpleBlock.register("pink_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block GRAY_WOOL_VERTICAL_SLAB = SimpleBlock.register("gray_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block LIGHT_GRAY_WOOL_VERTICAL_SLAB = SimpleBlock.register("light_gray_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block CYAN_WOOL_VERTICAL_SLAB = SimpleBlock.register("cyan_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block PURPLE_WOOL_VERTICAL_SLAB = SimpleBlock.register("purple_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BLUE_WOOL_VERTICAL_SLAB = SimpleBlock.register("blue_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BROWN_WOOL_VERTICAL_SLAB = SimpleBlock.register("brown_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block GREEN_WOOL_VERTICAL_SLAB = SimpleBlock.register("green_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block RED_WOOL_VERTICAL_SLAB = SimpleBlock.register("red_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    public static final Block BLACK_WOOL_VERTICAL_SLAB = SimpleBlock.register("black_wool_vertical_slab", new VerticalSlabBlock(Properties.of().mapColor(MapColor.WOOL).strength(0.8f).sound(SoundType.WOOL)), true);
+    // Xiaozhong's Metro所有方块
+    public static final Block WUZHOU_METRO_LOGO_1_3 = SimpleBlock.register("wuzhou_metro_logo_1_3", new WuzhouMetroLogo1T3Block(Properties.of().lightLevel(state -> 10)), true);
+    public static final Block WUZHOU_METRO_LOGO_3_3 = SimpleBlock.register("wuzhou_metro_logo_3_3", new WuzhouMetroLogo3T3Block(Properties.of().lightLevel(state -> 10)), true);
+    public static final Block FIRE_EXTINGUISHER = SimpleBlock.register("fire_extinguisher", new FireExtinguisherBlock(Properties.of()), true);
+    public static final Block FIRE_EXTINGUISHER_CABINET = SimpleBlock.register("fire_extinguisher_cabinet", new FireExtinguisherCabinetBlock(Properties.of()), true);
+    public static final Block TRAIN_DEPARTURE_BELL = SimpleBlock.register("train_departure_bell", new TrainDepartureBellBlock(Properties.of()), true);
+    public static final Block PARKING_BARRIER_LEFT = SimpleBlock.register("parking_barrier_left", new ParkingBarrierLeftBlock(Properties.of()), true);
+    public static final Block PARKING_BARRIER_MIDDLE = SimpleBlock.register("parking_barrier_middle", new ParkingBarrierMiddleBlock(Properties.of()), true);
+    public static final Block PARKING_BARRIER_RIGHT = SimpleBlock.register("parking_barrier_right",new ParkingBarrierRightBlock(Properties.of()), true);
+    public static final Block PARKING_BARRIER_BRACKET= SimpleBlock.register("parking_barrier_bracket",new ParkingBarrierBracketBlock(Properties.of()), true);
+    public static final Block LOW_STATION_SIGN = SimpleBlock.register("low_station_sign", new LowStationSignBlock(Properties.of()), true);
+    public static final Block PLAIN_CONSTRUCTION_BARRIER = SimpleBlock.register("plain_construction_barrier", new ConstructionBarrierBlock(Properties.of()), true);
+    public static final Block MESH_CONSTRUCTION_BARRIER = SimpleBlock.register("mesh_construction_barrier", new ConstructionBarrierBlock(Properties.of()), true);
+    public static final Block PLAIN_CONSTRUCTION_BARRIER_CORNER = SimpleBlock.register("plain_construction_barrier_corner", new ConstructionBarrierCornerBlock(Properties.of()), true);
+    public static final Block MESH_CONSTRUCTION_BARRIER_CORNER = SimpleBlock.register("mesh_construction_barrier_corner", new ConstructionBarrierCornerBlock(Properties.of()), true);
+    public static final Block TACTILE_PAVING = SimpleBlock.register("tactile_paving", new TactilePavingBlock(Properties.of()), true);
+    public static final Block APG_RAILING = SimpleBlock.register("apg_railing", new APGRailingBlock(Properties.of()), true);
+    public static final Block GLOWING_SLAB = SimpleBlock.register("glowing_slab", new SlabBlock(Properties.of().lightLevel(state -> 15)), true);
+    public static final Block HIGH_STATION_SIGN = TooltipBlock.register("high_station_sign", new HighStationSignBlock(Properties.of()), "tooltip.xzmetro.needs_support_block");
+    public static final Block METRO_BENCHMARK_SIGN = TooltipBlock.register("metro_benchmark_sign", new MetroBenchmarkSignBlock(Properties.of()), "tooltip.xzmetro.needs_support_block");
+    public static final Block ROAD_SIGN = TooltipBlock.register("road_sign", new RoadSignBlock(Properties.of()), "tooltip.xzmetro.needs_support_block");
+
+    public static void initialize() {
+    }
+}

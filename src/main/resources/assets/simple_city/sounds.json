@@ -1,0 +1,11 @@
+{
+  "train_departure_bell": {
+    "subtitle": "subtitles.simple_city.train_departure_bell",
+    "sounds": [
+      {
+        "name": "simple_city:train_departure_bell",
+        "max_distance": 90
+      }
+    ]
+  }
+}

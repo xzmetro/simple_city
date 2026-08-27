@@ -1,0 +1,14 @@
+package org.simplecity.mod.util;
+
+import net.minecraft.resources.ResourceLocation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Constants {
+    public static final String MOD_ID = "simple_city";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+    public static ResourceLocation getId(String path) {
+        return new ResourceLocation(MOD_ID, path);
+    }
+}
